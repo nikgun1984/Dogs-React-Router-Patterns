@@ -1,18 +1,23 @@
 import './App.css';
-import {Route,Switch} from 'react-router-dom';
+import {Route,Switch, Redirect, BrowserRouter} from 'react-router-dom';
+import { Dogs } from "./dogs";
 import DogList from './DogList';
+import {DogDetails} from './DogDetails';
 
 function App() {
   return (
 		<div className="App">
-			<header className="App-header">Dogs</header>
-			<main>
+			<BrowserRouter>
 				<Switch>
 					<Route exact path="/dogs">
-						<DogList />
+						<DogList dogs={Dogs.dogs} />
 					</Route>
+					<Route path="/dogs/:name">
+						<DogDetails dogs={Dogs.dogs} />
+					</Route>
+					<Redirect to="/dogs" />
 				</Switch>
-			</main>
+			</BrowserRouter>
 		</div>
 	);
 }

@@ -1,6 +1,6 @@
 export const Dogs = {
-	dogs: [
-		{
+	dogs: {
+		whiskey:{
 			name: "Whiskey",
 			age: 5,
 			src: 'whiskey.jpg',
@@ -10,7 +10,7 @@ export const Dogs = {
 				"Whiskey wants to cuddle with you!",
 			],
 		},
-		{
+		duke:{
 			name: "Duke",
 			age: 3,
 			src: 'duke.jpg',
@@ -20,7 +20,7 @@ export const Dogs = {
 				"Duke enjoys pawing other dogs.",
 			],
 		},
-		{
+		perry:{
 			name: "Perry",
 			age: 4,
 			src: 'perry.jpg',
@@ -30,7 +30,7 @@ export const Dogs = {
 				"Perry hates the rain.",
 			],
 		},
-		{
+		tubby:{
 			name: "Tubby",
 			age: 4,
 			src: 'tubby.jpg',
@@ -40,5 +40,6 @@ export const Dogs = {
 				"Angelina used to hate Tubby, but claims not to anymore.",
 			],
 		},
-	],
-};
+	}
+}
+		
